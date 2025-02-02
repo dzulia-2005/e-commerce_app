@@ -35,8 +35,16 @@ const userSchema = new Schema({
     profilePicture : {
         type: String,
         default:""
+    },
+
+    blocklist : {
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"user"
     }
 
-    
 
-})
+
+},{timestamps:true});
+
+const user = mongoose.model("user",userSchema);
+module.exports = user;
