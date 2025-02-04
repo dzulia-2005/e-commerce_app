@@ -5,6 +5,7 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const path = require("path")
 const {errorhandler} = require('./middlewares/errors')
+const authRoute= require('./routes/auth')
 dotenv.config();
 
 const app = express();
