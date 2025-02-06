@@ -7,7 +7,7 @@ const {
 
 
 //register user
-router.post('"/signup',SignUpController);
+router.post('/signup',SignUpController);
 
 //login user
 router.post("/signin",SignInController);

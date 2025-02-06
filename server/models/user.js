@@ -27,7 +27,7 @@ const userSchema = new Schema({
       default:"",
     },
 
-    items : [{
+    card : [{
         type:mongoose.Schema.Types.ObjectId,
         ref:"item"
     }],
@@ -36,6 +36,8 @@ const userSchema = new Schema({
         type: String,
         default:""
     },
+
+    
 
     blocklist : {
         type:mongoose.Schema.Types.ObjectId,
